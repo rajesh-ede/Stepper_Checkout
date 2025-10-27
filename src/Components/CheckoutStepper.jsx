@@ -15,10 +15,13 @@ const CheckoutStepper = ({stepConfig = []}) => {
         marginRight:stepRef.current[stepConfig.length-1].offsetWidth / 2,
       })
     },[stepRef,stepConfig.length])
+
     if(!stepConfig.length){
         <></>;
     }
-   
+   const handleprev = () =>{
+    if(currentstep > 1) setCurrentstep((prev) => prev - 1);
+   }
 
     const handleNext = () => {
         setCurrentstep(prevStep =>{
@@ -60,10 +63,11 @@ const CheckoutStepper = ({stepConfig = []}) => {
     </div>
       <ActiveComponent />
       <div className='btn-container'>
-    {!isCompleted &&(<button className='btn' onClick={handleNext}>{ currentstep === stepConfig.length ? "Finish" :"Next"}</button>)}
+     {currentstep > 1 && !isCompleted &&(<button className='btn-prev' onClick={handleprev}>Previous</button>)}
+    {!isCompleted &&(<button className='btn-next' onClick={handleNext}>{ currentstep === stepConfig.length ? "Finish" :"Next"}</button>)}
     </div>
     </>
   )
 }
 
-export default CheckoutStepper
+export default CheckoutStepper 
