@@ -1,16 +1,56 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+📹 Demo
 
-Currently, two official plugins are available:
+A working demo of this component is shown in the provided reference video:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+# 🧾 Checkout Stepper
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+A simple and interactive **Checkout Stepper** built using **React**, designed as a machine coding round problem to demonstrate component-based design, state management, and UI logic handling.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🎯 Problem Statement
+
+Build a **multi-step checkout progress indicator** (Stepper) that visually represents the user's progress through multiple stages of a checkout flow.
+
+Each step (e.g., Cart → Address → Payment → Summary) should:
+- Highlight the current active step.
+- Show completed steps with a filled indicator.
+- Update dynamically as the user navigates forward or backward.
+
+---
+
+## ⚙️ Features
+
+- Dynamic step configuration via props.  
+- Active and completed step highlighting.  
+- Progress bar animation between steps.  
+- Fully responsive and reusable React component.  
+- Clean, modular, and readable code.
+
+---
+
+## 🛠️ Tech Stack
+
+- **React (Hooks)** — component logic and rendering  
+- **CSS** — styling and animations  
+- **JavaScript (ES6+)** — functional logic  
+
+---
+
+📦 Component Overview
+
+- CheckoutStepper.jsx — Core stepper logic and rendering
+
+- App.css — Handles layout and progress bar styles
+
+- App.jsx — Example usage of the CheckoutStepper component
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/your-username/checkout-stepper.git
+cd checkout-stepper
