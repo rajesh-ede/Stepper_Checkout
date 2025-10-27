@@ -1,9 +1,13 @@
+
+
+
+
 # React + Vite
 
 📹 Demo
 
 A working demo of this component is shown in the provided reference video:
-
+https://github.com/user-attachments/assets/56f891a7-079a-4b95-92db-e44246e20bc5
 
 # 🧾 Checkout Stepper
 
